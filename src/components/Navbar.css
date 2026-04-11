@@ -1,0 +1,78 @@
+/* General Navbar Styling */
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.navbar-inner {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between; /* Pushes logo to left and nav-right to right */
+  align-items: center;
+}
+
+.logo-img {
+  height: 60px; /* Adjust based on your logo's aspect ratio */
+  display: block;
+}
+
+/* Right side container for links and coins */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Space between links and the coin badge */
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px; /* Spacing between individual links */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+  color: #000;
+}
+
+/* Coin Badge Styling */
+.coin-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 50px; /* Makes it a pill shape */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow as seen in image */
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.coin-badge:hover {
+  transform: translateY(-2px);
+}
+
+.coin-amount {
+  font-weight: 700;
+  font-size: 15px;
+  color: #333;
+}
+
+.coin-icon {
+  font-size: 18px;
+}
